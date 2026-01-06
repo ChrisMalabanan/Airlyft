@@ -1,0 +1,7 @@
+[21-Jun-2025 19:03:58 Europe/Berlin] PHP Warning:  require_once(../config/database.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\airlyft\aircraftsnpassenger\check_booking.php on line 14
+[21-Jun-2025 19:03:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../config/database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\airlyft\aircraftsnpassenger\check_booking.php:14
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\airlyft\aircraftsnpassenger\check_booking.php on line 14
+[21-Jun-2025 19:09:47 Europe/Berlin] General Error: Database configuration file not found
+[21-Jun-2025 19:14:26 Europe/Berlin] General Error: Invalid aircraftId, must be numeric

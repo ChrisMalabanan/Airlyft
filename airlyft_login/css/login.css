@@ -1,0 +1,304 @@
+    @font-face {
+            font-family: 'OxyNEO';
+            src: url('fonts/OXYNEO.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        } 
+        /* Base Styles - Consistency across pages */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; /* Poppins for general text */
+        }
+
+        html, body {
+            height: 100%; /* Full height for vertical centering */
+            width: 100%;
+            overflow-x: hidden;
+            /* Luxurious blue gradient background - with !important to ensure override */
+            background: linear-gradient(135deg, #1a2a4b, #2a4a7a, #4a6a9a) !important; 
+            color: #fff; /* Default text color for body, useful for login form */
+        }
+
+        /* Header Bar - Replicated exactly from panel.php */
+        .header-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); /* From panel.php */
+            backdrop-filter: blur(12px); /* From panel.php */
+            -webkit-backdrop-filter: blur(12px); /* For Safari support */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 5%; /* From panel.php */
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* From panel.php */
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo { /* Reverted to panel.php logo styling */
+            height: 50px; /* From panel.php */
+            width: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* From panel.php */
+        }
+
+        .header-title { /* Reverted to panel.php title styling */
+            font-family: 'Playfair Display', serif; /* From panel.php */
+            font-size: 28px; /* From panel.php */
+            font-weight: 700; /* From panel.php */
+            color: #fff;
+            letter-spacing: 1.5px; /* From panel.php */
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); /* From panel.php */
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 35px; /* From panel.php */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li a { /* Reverted to panel.php link styling */
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400; /* From panel.php */
+            display: flex;
+            align-items: center;
+            gap: 8px; /* From panel.php */
+            padding: 10px 15px; /* From panel.php */
+            border-radius: 25px; /* From panel.php */
+            transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease; /* From panel.php */
+            position: relative; /* For underline effect from panel.php */
+        }
+
+        .navbar li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #e6e6e6; /* From panel.php */
+            transform: translateY(-2px); /* From panel.php */
+        }
+
+        .navbar li a::after { /* Underline effect from panel.php */
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 5px;
+            width: 0%;
+            height: 2px;
+            background-color: #f0c300; /* Gold accent color */
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .navbar li a:hover::after {
+            width: calc(100% - 20px); /* Adjust width to fit padding */
+            left: 10px; /* Adjust position based on padding */
+        }
+        .navbar li a .bx {
+            font-size: 20px; /* Icon size */
+        }
+
+        /* Adjust body padding for fixed header and vertical centering */
+        body {
+            display: flex;
+            flex-direction: column; /* Stack header and main content vertically */
+            min-height: 100vh; /* Ensure full viewport height */
+            padding-top: 80px; /* Space for the fixed header height */
+        }
+        .main-content-wrapper { /* New wrapper for form content to handle centering */
+            flex-grow: 1; /* Allow it to take up available vertical space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Some padding around the form */
+            width: 100%;
+        }
+
+        /* Login Card - .user_card (Luxury Theme applied) */
+        .user_card {
+            width: 90%; /* Responsive width */
+            max-width: 450px; /* Max width for larger screens */
+            background: rgba(255, 255, 255, 0.1); /* Lighter transparency */
+            backdrop-filter: blur(15px); /* Frosted glass effect */
+            -webkit-backdrop-filter: blur(15px); /* Safari support */
+            color: white;
+            padding: 40px; /* More padding */
+            border-radius: 20px; /* More rounded corners */
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle light border */
+        }
+
+        /* Brand Logo (within user_card) */
+        .brand_logo_container {
+            position: relative;
+            height: 120px; /* Larger logo container */
+            width: 120px;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.15); /* Slightly lighter background for logo container */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            display: flex; /* For centering the logo image */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Ensure logo image stays within bounds */
+        }
+
+        .brand_logo {
+            height: 100px; /* Adjust logo image size */
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #f0c300; /* Gold border for logo */
+        }
+
+        /* Form Inputs */
+        .user_card .form-control {
+            background-color: rgba(255, 255, 255, 0.08) !important; /* Transparent input background */
+            color: #fff !important; /* White text */
+            border: 1px solid rgba(255, 255, 255, 0.3) !important; /* Subtle border */
+            border-radius: 8px !important; /* Rounded inputs */
+            padding: 12px 15px; /* More padding */
+            font-size: 1rem;
+        }
+
+        .user_card .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.15) !important;
+            border-color: #f0c300 !important; /* Gold border on focus */
+            box-shadow: 0 0 0 0.25rem rgba(240, 195, 0, 0.25) !important; /* Gold focus glow */
+        }
+
+        .user_card .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6) !important; /* Lighter placeholder text */
+        }
+
+        .input-group-text {
+            background: rgba(255, 255, 255, 0.15) !important; /* Match input background */
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            color: #f0c300 !important; /* Gold icons */
+            border-radius: 8px 0 0 8px !important; /* Match input border-radius */
+        }
+        .input-group-text .fas, .input-group-text .bx { /* Ensure boxicons also affected */
+            font-size: 1.2rem; /* Larger icons */
+        }
+
+        /* Login Button */
+        .login_btn {
+            background-color: #f0c300 !important; /* Gold accent color */
+            color: #333 !important; /* Dark text for contrast */
+            border: none !important;
+            padding: 12px 40px !important; /* More padding */
+            font-size: 1.1rem !important; /* Larger font */
+            font-weight: 600 !important;
+            border-radius: 50px !important; /* More rounded */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(240, 195, 0, 0.4); /* Subtle shadow */
+        }
+
+        .login_btn:hover {
+            background-color: #e0b300 !important; /* Slightly darker gold on hover */
+            transform: translateY(-2px); /* Lift effect */
+            box-shadow: 0 8px 20px rgba(240, 195, 0, 0.6); /* Enhanced shadow */
+        }
+
+        /* Links below login button */
+        .links {
+            color: rgba(255, 255, 255, 0.8); /* Lighter white for links text */
+            font-size: 0.95rem;
+        }
+        .links a {
+            color: #f0c300; /* Gold for "Sign Up" link */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #e0b300; /* Darker gold on hover */
+            text-decoration: underline;
+        }
+
+        /* Responsive Design for Header */
+        @media (max-width: 992px) {
+            .header-title {
+                font-size: 24px;
+            }
+            .navbar ul {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-bar {
+                flex-direction: column;
+                padding: 15px 20px;
+                align-items: flex-start;
+            }
+            .header-left {
+                margin-bottom: 15px;
+            }
+            .navbar ul {
+                flex-wrap: wrap; /* Allow navigation items to wrap */
+                justify-content: center;
+                gap: 15px;
+                width: 100%;
+            }
+            .navbar li a {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+            .navbar li a .bx {
+                font-size: 16px;
+            }
+            body {
+                padding-top: 120px; /* More space for stacked header */
+            }
+            .main-content-wrapper {
+                padding: 15px;
+            }
+            .user_card {
+                padding: 30px;
+            }
+            .brand_logo_container {
+                height: 100px;
+                width: 100px;
+            }
+            .brand_logo {
+                height: 80px;
+                width: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 20px;
+            }
+            .navbar ul {
+                justify-content: center;
+                gap: 10px;
+            }
+            .navbar li a {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+            .navbar li a .bx {
+                font-size: 16px;
+            }
+            .user_card {
+                padding: 25px;
+            }
+            .login_btn {
+                padding: 10px 30px !important;
+                font-size: 1rem !important;
+            }
+        }

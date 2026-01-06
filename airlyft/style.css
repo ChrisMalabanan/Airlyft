@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.welcome-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+.welcome-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-box p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #e6e6e6;
+}
+
+html, body, .panel-container, .panel {
+  margin: 5;
+  padding: 10;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Full screen panel with background and centered content */
+.panel {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scroll wrapper takes up full height and scrolls vertically */
+.scroll-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center; /* centers image column horizontally */
+}
+
+/* Vertical column of images with fixed height for 2 visible images */
+.image-scroll-container {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between images */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Adjust height so 2 images + 1 gap = 100vh */
+.image-scroll-container img {
+  width: 100%;
+  height: calc((100vh - 20px) / 2); /* exact height for 2 images with 20px gap */
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+
+.image-scroll-container img:hover {
+  transform: scale(1.02);
+}
+

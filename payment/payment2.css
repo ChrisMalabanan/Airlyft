@@ -1,0 +1,266 @@
+/* Custom Font - Ensure 'OxyNEO.otf' is in the same directory as index.php */
+@font-face {
+    font-family: 'OxyNEO';
+    src: url('OXYNEO.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #1a2a4b, #2a4a7a, #4a6a9a);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+/* Header Bar */
+.header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px !important;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.navbar li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #e6e6e6;
+    transform: translateY(-2px);
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 0%;
+    height: 2px;
+    background-color: #f0c300;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    width: calc(100% - 20px);
+    left: 10px;
+}
+
+.navbar li a .bx {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .header-title { font-size: 24px; } 
+    .navbar ul { gap: 20px; }
+    .navbar li a { font-size: 14px; gap: 6px; padding: 8px 12px; }
+}
+
+@media (max-width: 768px) {
+    .header-bar { flex-direction: column; padding: 15px 20px; align-items: flex-start; }
+    .header-left { margin-bottom: 15px; }
+    .navbar ul { flex-wrap: wrap; justify-content: center; gap: 15px; width: 100%; }
+    .logo { height: 40px; }
+    .header-title { font-size: 20px; }
+    .navbar li a { font-size: 12px; padding: 6px 10px; }
+    body { padding-top: 20px; }
+}
+
+@media (max-width: 480px) {
+    .header-title { font-size: 18px; }
+    .navbar ul { justify-content: center; gap: 10px; }
+    .navbar li a { font-size: 10px; padding: 5px 8px; }
+}
+
+/* Container and sections */
+.container {
+    margin-top: 140px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #111; /* Make text inside container black */
+    font-family: 'Poppins', Arial, sans-serif; /* Ensure font consistency */
+}
+.section, .payment-section {
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.payment-section {
+    display: none !important;
+}
+.payment-section.visible {
+    display: block !important;
+}
+h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Passenger list styling */
+.passenger-list {
+    margin-top: 1rem;
+}
+.passenger-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+.passenger-item:last-child {
+    border-bottom: none;
+}
+
+/* Button group layout */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+.button-group .btn {
+    min-width: 200px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+/* Blue button styling */
+.btn,
+a.btn,
+input.btn,
+button.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+a.btn:hover,
+input.btn:hover,
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Badge info color */
+.badge-info {
+    background-color: #17a2b8;
+}
+
+/* Payment form styling */
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.static-value {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.form-group input[type="file"] {
+    padding: 5px;
+}
+
+/* Print settings */
+@media print {
+    .btn,
+    .header-bar {
+        display: none !important;
+    }
+    body {
+        background: white;
+    }
+}
+
+/* Add this in your <head> section */
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');

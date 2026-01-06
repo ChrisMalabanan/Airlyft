@@ -1,0 +1,34 @@
+Airlyft Installation & Usage Manual
+
+1. Placement of Files
+Place the entire airlyft folder inside your XAMPP htdocs directory:
+		C:\xampp\htdocs\airlyft
+
+2. Start XAMPP Services
+Open the XAMPP Control Panel.
+Click Start for both Apache and MySQL.
+
+3. Access XAMPP & phpMyAdmin
+Click Admin next to MySQL to open phpMyAdmin in your browser.
+(Optional) Click Admin next to Apache to open the XAMPP dashboard.
+
+4. Database Setup
+In phpMyAdmin, create a new database named airlyft (if it does not already exist).
+Import the latest backup SQL file:
+Go to the backups folder.
+Choose the most recent backup_airlyft_*.sql file.
+In phpMyAdmin, select the airlyft database, then use the Import tab to upload the SQL file.
+
+5. Accessing the Application
+Home Page:
+http://localhost/airlyft/airlyft/welcome.php
+
+Admin Dashboard:
+http://localhost/airlyft/airlyft_login/admin_dashboard.php
+
+Note:
+
+Ensure all folder and file permissions allow read/write access as needed.
+Default database credentials are set for XAMPP (user: root, password: empty). Adjust in config files if your setup differs.
+For any issues, check the XAMPP control panel logs and ensure no port conflicts.
+Thank you for using Airlyft!

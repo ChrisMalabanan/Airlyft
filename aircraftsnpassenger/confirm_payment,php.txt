@@ -1,0 +1,148 @@
+<?php
+// confirm_payment.php - Finalizes the booking and inserts into DB
+
+require_once 'db_connect.php';
+session_start(); // Ensure session is started to access $_SESSION['temp_booking_data']
+
+header('Content-Type: application/json');
+
+$conn->begin_transaction(); // Start Transaction
+
+try {
+    $temporaryBookingId = $_POST['temporaryBookingId'] ?? '';
+    $paymentMode = $_POST['paymentMode'] ?? '';
+    $accountNumber = $_POST['accountNumber'] ?? '';
+    // Proof of payment file handling would go here, e.g., move_uploaded_file($_FILES['proofUpload']['tmp_name'], $targetPath);
+
+    if (empty($temporaryBookingId) || empty($paymentMode) || empty($accountNumber)) {
+        throw new Exception("Missing payment confirmation data.");
+    }
+
+    // Retrieve temporary booking data from session
+    if (!isset($_SESSION['temp_booking_data'][$temporaryBookingId])) {
+        throw new Exception("Temporary booking data not found or expired.");
+    }
+
+    $bookingData = $_SESSION['temp_booking_data'][$temporaryBookingId];
+
+    // Extract necessary data from temporary session data
+    $user_id = $bookingData['user_id'];
+    $aircraft_id = $bookingData['aircraft_id'];
+    $selectedDate = $bookingData['selected_date'];
+    $sched_id = $bookingData['sched_id_for_confirmation'];
+    $totalCost = $bookingData['total_cost'];
+    $passengerCount = $bookingData['passenger_count'];
+    $passengers = $bookingData['passengers'];
+    $dep_date_time = $bookingData['dep_date_time'];
+    $arr_date_time = $bookingData['arr_date_time'];
+    $departure_coords = $bookingData['departure_coords'];
+    $arrival_coords = $bookingData['arrival_coords'];
+    $status = 'Confirmed'; // Set status to Confirmed upon successful payment
+
+    // --- Check and/or Create Schedule Entry (Final Booking Lock) ---
+    // Re-check schedule with FOR UPDATE to prevent race conditions during final booking
+    $stmt_check_schedule = $conn->prepare("SELECT Sched_Id, Booked_Capacity FROM schedule WHERE Lift_Id = ? AND DATE(Dep_Date_Time) = ? FOR UPDATE");
+    if (!$stmt_check_schedule) {
+        throw new Exception("Failed to prepare statement for final schedule check: " . $conn->error);
+    }
+    $stmt_check_schedule->bind_param("is", $aircraft_id, $selectedDate);
+    $stmt_check_schedule->execute();
+    $result_check_schedule = $stmt_check_schedule->get_result();
+    $existing_schedule = $result_check_schedule->fetch_assoc();
+    $stmt_check_schedule->close();
+
+    $max_aircraft_capacity_query = $conn->prepare("SELECT Capacity FROM lift WHERE Aircraft_Id = ?");
+    $max_aircraft_capacity_query->bind_param("i", $aircraft_id);
+    $max_aircraft_capacity_query->execute();
+    $capacity_result = $max_aircraft_capacity_query->get_result()->fetch_assoc();
+    preg_match('/Up to (\d+) passengers/', $capacity_result['Capacity'], $matches);
+    $max_aircraft_capacity = isset($matches[1]) ? (int)$matches[1] : 0;
+    $max_aircraft_capacity_query->close();
+
+    if ($existing_schedule) {
+        $sched_id = $existing_schedule['Sched_Id'];
+        $current_booked_capacity = $existing_schedule['Booked_Capacity'];
+
+        if (($current_booked_capacity + $passengerCount) > $max_aircraft_capacity) {
+            throw new Exception("This flight is now fully booked or capacity exceeded. Please try another date or aircraft.");
+        }
+
+        $new_booked_capacity = $current_booked_capacity + $passengerCount;
+        $stmt_update_schedule = $conn->prepare("UPDATE schedule SET Booked_Capacity = ?, Status = ? WHERE Sched_Id = ?");
+        if (!$stmt_update_schedule) {
+            throw new Exception("Failed to prepare update schedule statement for final booking: " . $conn->error);
+        }
+        $stmt_update_schedule->bind_param("isi", $new_booked_capacity, $status, $sched_id);
+        if (!$stmt_update_schedule->execute()) {
+            throw new Exception("Error updating schedule capacity on final booking: " . $stmt_update_schedule->error);
+        }
+        $stmt_update_schedule->close();
+
+    } else {
+        // If schedule didn't exist, create it now as Confirmed
+        $stmt_insert_schedule = $conn->prepare("INSERT INTO schedule (Lift_Id, Departure_Coordinates, Arrival_Coordinates, Arr_Date_Time, Status, Dep_Date_Time, Booked_Capacity) VALUES (?, ?, ?, ?, ?, ?, ?)");
+        if (!$stmt_insert_schedule) {
+            throw new Exception("Failed to prepare insert schedule statement on final booking: " . $conn->error);
+        }
+        $stmt_insert_schedule->bind_param("issssii", $aircraft_id, $departure_coords, $arrival_coords, $arr_date_time, $status, $dep_date_time, $passengerCount);
+
+        if (!$stmt_insert_schedule->execute()) {
+            throw new Exception("Error creating new schedule entry on final booking: " . $stmt_insert_schedule->error);
+        }
+        $sched_id = $conn->insert_id; // Get the ID of the newly created schedule
+        $stmt_insert_schedule->close();
+    }
+
+
+    // --- Insert into `booking` table ---
+    $stmt_booking = $conn->prepare("INSERT INTO booking (User_Id, Aircraft_Id, Selected_Date_of_Flight, Sched_Id, Total_Cost, Booking_Date) VALUES (?, ?, ?, ?, ?, NOW())");
+    if (!$stmt_booking) {
+        throw new Exception("Failed to prepare booking statement: " . $conn->error);
+    }
+    $stmt_booking->bind_param("iisds", $user_id, $aircraft_id, $selectedDate, $sched_id, $totalCost);
+
+    if (!$stmt_booking->execute()) {
+        throw new Exception("Error inserting booking data: " . $stmt_booking->error);
+    }
+    $finalBookingId = $conn->insert_id; // Get the actual Booking_Id from DB
+    $stmt_booking->close();
+
+    // --- Insert into `passengers` table (for each passenger) ---
+    $stmt_passenger = $conn->prepare("INSERT INTO passengers (Booking_Id, FName, LName, Age, Address, Has_Insurance, Insurance_Details) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    if (!$stmt_passenger) {
+        throw new Exception("Failed to prepare passenger statement: " . $conn->error);
+    }
+    $stmt_passenger->bind_param("ississs", $finalBookingId, $fname, $lname, $age, $address, $hasInsurance, $insuranceDetails);
+
+    foreach ($passengers as $passenger) {
+        $fname = $passenger['fname'] ?? '';
+        $lname = $passenger['lname'] ?? '';
+        $age = (int)($passenger['age'] ?? 0);
+        $address = $passenger['address'] ?? '';
+        $hasInsurance = ($passenger['hasInsurance'] ?? 'no') === 'yes' ? 1 : 0;
+        $insuranceDetails = $hasInsurance ? ($passenger['insuranceDetails'] ?? null) : null;
+
+        if (empty($fname) || empty($lname) || $age <= 0 || empty($address)) {
+            throw new Exception("Missing or invalid passenger details for one or more passengers.");
+        }
+
+        if (!$stmt_passenger->execute()) {
+            throw new Exception("Error inserting passenger data: " . $stmt_passenger->error);
+        }
+    }
+    $stmt_passenger->close();
+
+    $conn->commit();
+
+    // Remove temporary data from session after successful booking
+    unset($_SESSION['temp_booking_data'][$temporaryBookingId]);
+
+    echo json_encode(["status" => "success", "message" => "Booking and Payment Confirmed!", "bookingId" => $finalBookingId]);
+
+} catch (Exception $e) {
+    $conn->rollback();
+    echo json_encode(["status" => "error", "message" => "Payment confirmation failed: " . $e->getMessage()]);
+} finally {
+    $conn->close();
+}
+?>

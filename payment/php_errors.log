@@ -1,0 +1,4124 @@
+[21-Jun-2025 21:34:47 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 69
+            [username] => raiganto
+            [email] => raiganto@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$vrnoQOHN/lVKp7.cEatvv.ABkbp3/Pw1KbghFv219.emehGfmk7g6
+            [role] => user
+        )
+
+    [booking_id] => 62
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => sherwin
+                    [lname] => collins
+                    [age] => 18
+                    [street] => stix
+                    [barangay] => ferry
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 24, 2025 at 8:00 AM
+    [lift_model] => Airbus+H160
+    [lift_capacity] => Up+to+10+passengers
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:50:00
+    [payment_mode] => Bank Transfer
+    [account] => 123456
+    [base_price] => 300000.00
+    [surcharge] => 500.00
+    [total_paid] => 300500.00
+)
+
+[21-Jun-2025 21:42:30 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 69
+            [username] => raiganto
+            [email] => raiganto@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$vrnoQOHN/lVKp7.cEatvv.ABkbp3/Pw1KbghFv219.emehGfmk7g6
+            [role] => user
+        )
+
+    [booking_id] => 62
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => sherwin
+                    [lname] => collins
+                    [age] => 18
+                    [street] => stix
+                    [barangay] => ferry
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 24, 2025 at 8:00 AM
+    [lift_model] => Airbus+H160
+    [lift_capacity] => Up+to+10+passengers
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:50:00
+    [payment_mode] => Bank Transfer
+    [account] => 123456
+    [base_price] => 300000.00
+    [surcharge] => 500.00
+    [total_paid] => 300500.00
+)
+
+[21-Jun-2025 21:42:30 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"34","street":"#402 zone 6 Santor","barangay":"ferry","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 09:50:00
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456
+)
+
+[21-Jun-2025 21:42:30 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => pixelcut-export (1).jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpB161.tmp
+            [error] => 0
+            [size] => 649926
+        )
+
+)
+
+[21-Jun-2025 21:42:30 Asia/Manila] Schedule data before insertion:
+[21-Jun-2025 21:42:30 Asia/Manila] Aircraft_Id: 2
+[21-Jun-2025 21:42:30 Asia/Manila] Departure_Coordinates: MNL
+[21-Jun-2025 21:42:30 Asia/Manila] Arrival_Coordinates: Huma Island Resort
+[21-Jun-2025 21:42:30 Asia/Manila] Arr_Date_Time: 2025-06-25 09:50:00
+[21-Jun-2025 21:42:30 Asia/Manila] Status: Confirmed
+[21-Jun-2025 21:42:30 Asia/Manila] Booked_Capacity: 1
+[21-Jun-2025 21:42:30 Asia/Manila] Dep_Date_Time: 2025-06-25 08:00:00
+[21-Jun-2025 21:42:30 Asia/Manila] New schedule created with ID: 67
+[21-Jun-2025 21:46:27 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 69
+            [username] => raiganto
+            [email] => raiganto@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$vrnoQOHN/lVKp7.cEatvv.ABkbp3/Pw1KbghFv219.emehGfmk7g6
+            [role] => user
+        )
+
+    [booking_id] => 63
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 34
+                    [street] => #402 zone 6 Santor
+                    [barangay] => ferry
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 21, 2025, 09:42 PM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 09:50:00
+    [payment_mode] => Gcash
+    [account] => 123456
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[21-Jun-2025 22:25:26 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+)
+
+[21-Jun-2025 22:26:33 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+)
+
+[21-Jun-2025 22:26:33 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Bank Transfer
+    [referenceNumber] => 4568
+    [aircraftRate] => 450000.00
+    [lift_model] => Sikorsky+S-76D
+    [passenger_count] => 1
+    [passengers] => [{"fname":"mue","lname":"ningxue","age":"34","street":"tong","barangay":"fei","municipality":"han","province":"beijing","hasInsurance":"yes","insuranceDetails":"12345689"}]
+    [dep_date_time] => 2025-11-19 08:00:00
+    [arr_date_time] => 2025-11-19 09:00:00
+    [departure] => MNL
+    [arrival] => Alphaland Baguio
+    [surcharge] => 0.00
+    [payment_mode] => Bank Transfer
+    [account] => 4568
+)
+
+[21-Jun-2025 22:26:33 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => Flowchart_4.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7BD.tmp
+            [error] => 0
+            [size] => 117063
+        )
+
+)
+
+[21-Jun-2025 22:26:33 Asia/Manila] Schedule data before insertion:
+[21-Jun-2025 22:26:33 Asia/Manila] Aircraft_Id: 4
+[21-Jun-2025 22:26:33 Asia/Manila] Departure_Coordinates: MNL
+[21-Jun-2025 22:26:33 Asia/Manila] Arrival_Coordinates: Alphaland Baguio
+[21-Jun-2025 22:26:33 Asia/Manila] Arr_Date_Time: 2025-11-19 09:00:00
+[21-Jun-2025 22:26:33 Asia/Manila] Status: Confirmed
+[21-Jun-2025 22:26:33 Asia/Manila] Booked_Capacity: 1
+[21-Jun-2025 22:26:33 Asia/Manila] Dep_Date_Time: 2025-11-19 08:00:00
+[21-Jun-2025 22:26:33 Asia/Manila] New schedule created with ID: 68
+[21-Jun-2025 22:39:21 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+    [booking_id] => 64
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => mue
+                    [lname] => ningxue
+                    [age] => 34
+                    [street] => tong
+                    [barangay] => fei
+                    [municipality] => han
+                    [province] => beijing
+                    [hasInsurance] => yes
+                    [insuranceDetails] => 12345689
+                )
+
+        )
+
+    [booking_date] => June 21, 2025, 10:26 PM
+    [lift_model] => Sikorsky S-76D
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Alphaland Baguio
+    [dep_date_time] => 2025-11-19 08:00:00
+    [arr_date_time] => 2025-11-19 09:00:00
+    [payment_mode] => Bank Transfer
+    [account] => 4568
+    [base_price] => 450000
+    [surcharge] => 0
+    [total_paid] => 450000
+)
+
+[22-Jun-2025 00:32:18 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 00:32:18 Asia/Manila] POST data: Array
+(
+    [aircraftName] => Cessna Turbo Stationair HD (T206H)
+    [selectedDate] => 
+    [aircraftRate] => 
+    [passengerCount] => 1
+)
+
+[22-Jun-2025 00:32:18 Asia/Manila] FILES data: Array
+(
+)
+
+[22-Jun-2025 00:32:18 Asia/Manila] Error: Invalid aircraft rate
+Trace: #0 {main}
+[22-Jun-2025 01:22:31 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 01:23:04 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 01:23:04 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 35627334
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"12","street":"#402 zone 6 Santor","barangay":"sambat","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 35627334
+)
+
+[22-Jun-2025 01:23:04 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => pixelcut-export (1).jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpA400.tmp
+            [error] => 0
+            [size] => 649926
+        )
+
+)
+
+[22-Jun-2025 01:23:04 Asia/Manila] Schedule data before insertion:
+[22-Jun-2025 01:23:04 Asia/Manila] Aircraft_Id: 1
+[22-Jun-2025 01:23:04 Asia/Manila] Departure_Coordinates: MNL
+[22-Jun-2025 01:23:04 Asia/Manila] Arrival_Coordinates: Amanpulo
+[22-Jun-2025 01:23:04 Asia/Manila] Arr_Date_Time: 2025-06-30 09:10:00
+[22-Jun-2025 01:23:04 Asia/Manila] Status: Confirmed
+[22-Jun-2025 01:23:04 Asia/Manila] Booked_Capacity: 1
+[22-Jun-2025 01:23:04 Asia/Manila] Dep_Date_Time: 2025-06-30 08:00:00
+[22-Jun-2025 01:23:04 Asia/Manila] New schedule created with ID: 73
+[22-Jun-2025 01:23:34 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+    [booking_id] => 65
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 12
+                    [street] => #402 zone 6 Santor
+                    [barangay] => sambat
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 22, 2025, 01:23 AM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [payment_mode] => Gcash
+    [account] => 35627334
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[22-Jun-2025 01:23:39 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+    [booking_id] => 65
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 12
+                    [street] => #402 zone 6 Santor
+                    [barangay] => sambat
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 22, 2025, 01:23 AM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [payment_mode] => Gcash
+    [account] => 35627334
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[22-Jun-2025 01:23:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 70
+            [username] => ruerat
+            [email] => ruerat@gmail.com
+            [phonenumber] => 09662288399
+            [password] => $2y$10$78IZTtb7HD2Nfo.GafkpcuSlmRI2dMbdJkE2kEMM2sR30fNoh0rDO
+            [role] => user
+        )
+
+    [booking_id] => 65
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 12
+                    [street] => #402 zone 6 Santor
+                    [barangay] => sambat
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 22, 2025, 01:23 AM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [payment_mode] => Gcash
+    [account] => 35627334
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[22-Jun-2025 01:23:45 Asia/Manila] Session data: Array
+(
+)
+
+[22-Jun-2025 01:23:45 Asia/Manila] User not logged in, redirecting to login.php
+[22-Jun-2025 01:34:06 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 01:36:24 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 01:36:24 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 35627334
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"23","street":"#402 zone 6 Santor","barangay":"bangkok","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:00:00
+    [departure] => MNL
+    [arrival] => Alphaland Baguio
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 35627334
+)
+
+[22-Jun-2025 01:36:24 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => Flowchart4 (1).png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpD8B3.tmp
+            [error] => 0
+            [size] => 118104
+        )
+
+)
+
+[22-Jun-2025 01:36:24 Asia/Manila] Schedule data before insertion:
+[22-Jun-2025 01:36:24 Asia/Manila] Aircraft_Id: 2
+[22-Jun-2025 01:36:24 Asia/Manila] Departure_Coordinates: MNL
+[22-Jun-2025 01:36:24 Asia/Manila] Arrival_Coordinates: Alphaland Baguio
+[22-Jun-2025 01:36:24 Asia/Manila] Arr_Date_Time: 2025-06-30 09:00:00
+[22-Jun-2025 01:36:24 Asia/Manila] Status: Confirmed
+[22-Jun-2025 01:36:24 Asia/Manila] Booked_Capacity: 1
+[22-Jun-2025 01:36:24 Asia/Manila] Dep_Date_Time: 2025-06-30 08:00:00
+[22-Jun-2025 01:36:24 Asia/Manila] New schedule created with ID: 74
+[22-Jun-2025 01:37:21 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 66
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 23
+                    [street] => #402 zone 6 Santor
+                    [barangay] => bangkok
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 22, 2025, 01:36 AM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Alphaland Baguio
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:00:00
+    [payment_mode] => Gcash
+    [account] => 35627334
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[22-Jun-2025 16:44:54 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 16:45:19 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 16:45:19 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 12345678910
+    [aircraftRate] => 300000.00
+    [lift_model] => Airbus+H160
+    [passenger_count] => 1
+    [passengers] => [{"fname":"chichi","lname":"chocho","age":"23","street":"#402 zone 6 Santor","barangay":"bangkok","municipality":"Tanauan city","province":"Batangas","hasInsurance":"yes","insuranceDetails":"wssgjsjs2m"}]
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [surcharge] => 0.00
+    [payment_mode] => Gcash
+    [account] => 12345678910
+)
+
+[22-Jun-2025 16:45:19 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => pixelcut-export (1).jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpCF32.tmp
+            [error] => 0
+            [size] => 649926
+        )
+
+)
+
+[22-Jun-2025 16:45:19 Asia/Manila] Error: Invalid reference number (1-9 digits required)
+Trace: #0 {main}
+[22-Jun-2025 16:45:26 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[22-Jun-2025 16:45:26 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 300000.00
+    [lift_model] => Airbus+H160
+    [passenger_count] => 1
+    [passengers] => [{"fname":"chichi","lname":"chocho","age":"23","street":"#402 zone 6 Santor","barangay":"bangkok","municipality":"Tanauan city","province":"Batangas","hasInsurance":"yes","insuranceDetails":"wssgjsjs2m"}]
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [surcharge] => 0.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[22-Jun-2025 16:45:26 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => pixelcut-export (1).jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpEB66.tmp
+            [error] => 0
+            [size] => 649926
+        )
+
+)
+
+[22-Jun-2025 16:45:26 Asia/Manila] Schedule data before insertion:
+[22-Jun-2025 16:45:26 Asia/Manila] Aircraft_Id: 3
+[22-Jun-2025 16:45:26 Asia/Manila] Departure_Coordinates: MNL
+[22-Jun-2025 16:45:26 Asia/Manila] Arrival_Coordinates: Amanpulo
+[22-Jun-2025 16:45:26 Asia/Manila] Arr_Date_Time: 2025-06-30 09:10:00
+[22-Jun-2025 16:45:26 Asia/Manila] Status: Confirmed
+[22-Jun-2025 16:45:26 Asia/Manila] Booked_Capacity: 1
+[22-Jun-2025 16:45:26 Asia/Manila] Dep_Date_Time: 2025-06-30 08:00:00
+[22-Jun-2025 16:45:26 Asia/Manila] New schedule created with ID: 75
+[22-Jun-2025 16:46:05 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 67
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => chichi
+                    [lname] => chocho
+                    [age] => 23
+                    [street] => #402 zone 6 Santor
+                    [barangay] => bangkok
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => yes
+                    [insuranceDetails] => wssgjsjs2m
+                )
+
+        )
+
+    [booking_date] => June 22, 2025, 04:45 PM
+    [lift_model] => Airbus H160
+    [lift_capacity] => Up to 10 passengers
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 300000
+    [surcharge] => 0
+    [total_paid] => 300000
+)
+
+[22-Jun-2025 16:46:07 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 67
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => chichi
+                    [lname] => chocho
+                    [age] => 23
+                    [street] => #402 zone 6 Santor
+                    [barangay] => bangkok
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => yes
+                    [insuranceDetails] => wssgjsjs2m
+                )
+
+        )
+
+    [booking_date] => June 22, 2025, 04:45 PM
+    [lift_model] => Airbus H160
+    [lift_capacity] => Up to 10 passengers
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [dep_date_time] => 2025-06-30 08:00:00
+    [arr_date_time] => 2025-06-30 09:10:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 300000
+    [surcharge] => 0
+    [total_paid] => 300000
+)
+
+[22-Jun-2025 16:46:09 Asia/Manila] Session data: Array
+(
+)
+
+[22-Jun-2025 16:46:09 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 10:34:58 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 10:35:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 10:35:43 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 12345678910
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"89","street":"#402 zone 6 Santor","barangay":"bangkok","municipality":"Tanauan city","province":"Batangas","hasInsurance":"yes","insuranceDetails":"098765"}]
+    [dep_date_time] => 2025-06-23 08:00:00
+    [arr_date_time] => 2025-06-23 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 0.00
+    [payment_mode] => Gcash
+    [account] => 12345678910
+)
+
+[23-Jun-2025 10:35:43 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1114.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2FEB.tmp
+            [error] => 0
+            [size] => 2215915
+        )
+
+)
+
+[23-Jun-2025 10:35:43 Asia/Manila] Error: Invalid reference number (1-9 digits required)
+Trace: #0 {main}
+[23-Jun-2025 10:35:59 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 10:35:59 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"89","street":"#402 zone 6 Santor","barangay":"bangkok","municipality":"Tanauan city","province":"Batangas","hasInsurance":"yes","insuranceDetails":"098765"}]
+    [dep_date_time] => 2025-06-23 08:00:00
+    [arr_date_time] => 2025-06-23 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 0.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 10:35:59 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1114.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php6C68.tmp
+            [error] => 0
+            [size] => 2215915
+        )
+
+)
+
+[23-Jun-2025 10:35:59 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 10:35:59 Asia/Manila] Aircraft_Id: 1
+[23-Jun-2025 10:35:59 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 10:35:59 Asia/Manila] Arrival_Coordinates: Balesin Island
+[23-Jun-2025 10:35:59 Asia/Manila] Arr_Date_Time: 2025-06-23 08:25:00
+[23-Jun-2025 10:35:59 Asia/Manila] Status: Confirmed
+[23-Jun-2025 10:35:59 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 10:35:59 Asia/Manila] Dep_Date_Time: 2025-06-23 08:00:00
+[23-Jun-2025 10:35:59 Asia/Manila] New schedule created with ID: 76
+[23-Jun-2025 10:38:06 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 68
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 89
+                    [street] => #402 zone 6 Santor
+                    [barangay] => bangkok
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => yes
+                    [insuranceDetails] => 098765
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 10:35 AM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [dep_date_time] => 2025-06-23 08:00:00
+    [arr_date_time] => 2025-06-23 08:25:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 50000
+    [surcharge] => 0
+    [total_paid] => 50000
+)
+
+[23-Jun-2025 11:22:49 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 11:23:39 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 11:23:39 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 1222333333333
+    [aircraftRate] => 450000.00
+    [lift_model] => Sikorsky+S-76D
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"23","street":"#402 zone 6 Santor","barangay":"sambat","municipality":"Tanauan city","province":"Batangas","hasInsurance":"yes","insuranceDetails":"123333333333333"}]
+    [dep_date_time] => 2025-06-27 08:00:00
+    [arr_date_time] => 2025-06-27 09:50:00
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [surcharge] => 0.00
+    [payment_mode] => Gcash
+    [account] => 1222333333333
+)
+
+[23-Jun-2025 11:23:39 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1115.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpFDC.tmp
+            [error] => 0
+            [size] => 7636078
+        )
+
+)
+
+[23-Jun-2025 11:23:39 Asia/Manila] Error: Invalid reference number (1-9 digits required)
+Trace: #0 {main}
+[23-Jun-2025 11:23:45 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 11:23:45 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 1222333
+    [aircraftRate] => 450000.00
+    [lift_model] => Sikorsky+S-76D
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"23","street":"#402 zone 6 Santor","barangay":"sambat","municipality":"Tanauan city","province":"Batangas","hasInsurance":"yes","insuranceDetails":"123333333333333"}]
+    [dep_date_time] => 2025-06-27 08:00:00
+    [arr_date_time] => 2025-06-27 09:50:00
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [surcharge] => 0.00
+    [payment_mode] => Gcash
+    [account] => 1222333
+)
+
+[23-Jun-2025 11:23:45 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1115.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php27D9.tmp
+            [error] => 0
+            [size] => 7636078
+        )
+
+)
+
+[23-Jun-2025 11:23:45 Asia/Manila] Error: Invalid file type or size (max 5MB JPEG/PNG allowed)
+Trace: #0 {main}
+[23-Jun-2025 11:23:54 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 11:23:54 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 1222333
+    [aircraftRate] => 450000.00
+    [lift_model] => Sikorsky+S-76D
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"23","street":"#402 zone 6 Santor","barangay":"sambat","municipality":"Tanauan city","province":"Batangas","hasInsurance":"yes","insuranceDetails":"123333333333333"}]
+    [dep_date_time] => 2025-06-27 08:00:00
+    [arr_date_time] => 2025-06-27 09:50:00
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [surcharge] => 0.00
+    [payment_mode] => Gcash
+    [account] => 1222333
+)
+
+[23-Jun-2025 11:23:54 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1114.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php4BED.tmp
+            [error] => 0
+            [size] => 2215915
+        )
+
+)
+
+[23-Jun-2025 11:23:54 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 11:23:54 Asia/Manila] Aircraft_Id: 4
+[23-Jun-2025 11:23:54 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 11:23:54 Asia/Manila] Arrival_Coordinates: Huma Island Resort
+[23-Jun-2025 11:23:54 Asia/Manila] Arr_Date_Time: 2025-06-27 09:50:00
+[23-Jun-2025 11:23:54 Asia/Manila] Status: Confirmed
+[23-Jun-2025 11:23:54 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 11:23:54 Asia/Manila] Dep_Date_Time: 2025-06-27 08:00:00
+[23-Jun-2025 11:23:54 Asia/Manila] New schedule created with ID: 77
+[23-Jun-2025 11:25:37 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 69
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 23
+                    [street] => #402 zone 6 Santor
+                    [barangay] => sambat
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => yes
+                    [insuranceDetails] => 123333333333333
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 11:23 AM
+    [lift_model] => Sikorsky S-76D
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Huma Island Resort
+    [dep_date_time] => 2025-06-27 08:00:00
+    [arr_date_time] => 2025-06-27 09:50:00
+    [payment_mode] => Gcash
+    [account] => 1222333
+    [base_price] => 450000
+    [surcharge] => 0
+    [total_paid] => 450000
+)
+
+[23-Jun-2025 11:52:56 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 11:54:56 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 11:55:04 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 11:55:46 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:55:46 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 11:56:05 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:56:05 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 11:56:42 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:56:42 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 11:56:54 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:56:54 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 11:56:57 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:56:57 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 11:57:05 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:57:05 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 11:57:47 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:57:47 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 11:58:18 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 11:58:18 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:04:11 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:04:11 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:05:10 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:05:10 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:18:10 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:18:39 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:18:39 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 12345678910
+    [aircraftRate] => 300000.00
+    [lift_model] => Airbus+H160
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"12","street":"#402 zone 6 Santor","barangay":"ferry","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 12345678910
+)
+
+[23-Jun-2025 12:18:39 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1114.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php6BA8.tmp
+            [error] => 0
+            [size] => 2215915
+        )
+
+)
+
+[23-Jun-2025 12:18:39 Asia/Manila] Error: Invalid reference number (1-9 digits required)
+Trace: #0 {main}
+[23-Jun-2025 12:18:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:18:43 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 300000.00
+    [lift_model] => Airbus+H160
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"12","street":"#402 zone 6 Santor","barangay":"ferry","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 12:18:43 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1114.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7C14.tmp
+            [error] => 0
+            [size] => 2215915
+        )
+
+)
+
+[23-Jun-2025 12:18:43 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 12:18:43 Asia/Manila] Aircraft_Id: 3
+[23-Jun-2025 12:18:43 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 12:18:43 Asia/Manila] Arrival_Coordinates: Balesin Island
+[23-Jun-2025 12:18:43 Asia/Manila] Arr_Date_Time: 2025-06-25 08:25:00
+[23-Jun-2025 12:18:43 Asia/Manila] Status: Confirmed
+[23-Jun-2025 12:18:43 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 12:18:43 Asia/Manila] Dep_Date_Time: 2025-06-25 08:00:00
+[23-Jun-2025 12:18:43 Asia/Manila] New schedule created with ID: 78
+[23-Jun-2025 12:18:58 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 70
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => Cristina
+                    [lname] => Malabanan
+                    [age] => 12
+                    [street] => #402 zone 6 Santor
+                    [barangay] => ferry
+                    [municipality] => Tanauan city
+                    [province] => Batangas
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 12:18 PM
+    [lift_model] => Airbus H160
+    [lift_capacity] => Up to 10 passengers
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 08:25:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 300000
+    [surcharge] => 500
+    [total_paid] => 300500
+)
+
+[23-Jun-2025 12:24:06 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:24:25 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:24:51 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:24:51 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:25:02 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:25:02 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:25:51 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:25:51 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:26:10 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:26:10 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:26:44 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:26:44 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:27:27 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:27:37 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:28:31 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:28:31 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:28:35 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:28:35 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:28:44 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 12:28:44 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 12:32:06 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:32:18 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 12:32:18 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Bank Transfer
+    [referenceNumber] => 35627334
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"mue","lname":"ningxue","age":"34","street":"tong","barangay":"sambat","municipality":"han","province":"beijing","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Bank Transfer
+    [account] => 35627334
+)
+
+[23-Jun-2025 12:32:18 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1121.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpEB23.tmp
+            [error] => 0
+            [size] => 1267517
+        )
+
+)
+
+[23-Jun-2025 12:32:18 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 12:32:18 Asia/Manila] Aircraft_Id: 2
+[23-Jun-2025 12:32:18 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 12:32:18 Asia/Manila] Arrival_Coordinates: Balesin Island
+[23-Jun-2025 12:32:18 Asia/Manila] Arr_Date_Time: 2025-06-24 08:25:00
+[23-Jun-2025 12:32:18 Asia/Manila] Status: Confirmed
+[23-Jun-2025 12:32:18 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 12:32:18 Asia/Manila] Dep_Date_Time: 2025-06-24 08:00:00
+[23-Jun-2025 12:32:18 Asia/Manila] New schedule created with ID: 79
+[23-Jun-2025 12:32:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 71
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => mue
+                    [lname] => ningxue
+                    [age] => 34
+                    [street] => tong
+                    [barangay] => sambat
+                    [municipality] => han
+                    [province] => beijing
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 12:32 PM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [payment_mode] => Bank Transfer
+    [account] => 35627334
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[23-Jun-2025 12:33:08 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 71
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => mue
+                    [lname] => ningxue
+                    [age] => 34
+                    [street] => tong
+                    [barangay] => sambat
+                    [municipality] => han
+                    [province] => beijing
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 12:32 PM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [payment_mode] => Bank Transfer
+    [account] => 35627334
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[23-Jun-2025 12:33:08 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 35627334
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"mue","lname":"ningxue","age":"34","street":"tong","barangay":"sambat","municipality":"han","province":"beijing","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 35627334
+)
+
+[23-Jun-2025 12:33:08 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1114.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpAD99.tmp
+            [error] => 0
+            [size] => 2215915
+        )
+
+)
+
+[23-Jun-2025 12:33:08 Asia/Manila] Error: This aircraft is already booked for the selected date. Please choose another date or aircraft.
+Trace: #0 {main}
+[23-Jun-2025 12:33:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 71
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => mue
+                    [lname] => ningxue
+                    [age] => 34
+                    [street] => tong
+                    [barangay] => sambat
+                    [municipality] => han
+                    [province] => beijing
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 12:32 PM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [payment_mode] => Bank Transfer
+    [account] => 35627334
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[23-Jun-2025 12:33:58 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 68
+            [username] => christoipini
+            [email] => christopini@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$0gsyXOFVylyu.g.aFAs2c.1FUUYLo4zaUK2/g9IjrM6xIUK9.GtDy
+            [role] => user
+        )
+
+    [booking_id] => 71
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => mue
+                    [lname] => ningxue
+                    [age] => 34
+                    [street] => tong
+                    [barangay] => sambat
+                    [municipality] => han
+                    [province] => beijing
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 12:32 PM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [payment_mode] => Bank Transfer
+    [account] => 35627334
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[23-Jun-2025 12:33:58 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456
+    [aircraftRate] => 300000.00
+    [lift_model] => Airbus+H160
+    [passenger_count] => 1
+    [passengers] => [{"fname":"Cristina","lname":"Malabanan","age":"34","street":"#402 zone 6 Santor","barangay":"fei","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456
+)
+
+[23-Jun-2025 12:33:58 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 1114.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7000.tmp
+            [error] => 0
+            [size] => 2215915
+        )
+
+)
+
+[23-Jun-2025 12:33:58 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 12:33:58 Asia/Manila] Aircraft_Id: 3
+[23-Jun-2025 12:33:58 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 12:33:58 Asia/Manila] Arrival_Coordinates: Balesin Island
+[23-Jun-2025 12:33:58 Asia/Manila] Arr_Date_Time: 2025-06-24 08:25:00
+[23-Jun-2025 12:33:58 Asia/Manila] Status: Confirmed
+[23-Jun-2025 12:33:58 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 12:33:58 Asia/Manila] Dep_Date_Time: 2025-06-24 08:00:00
+[23-Jun-2025 12:33:58 Asia/Manila] New schedule created with ID: 80
+[23-Jun-2025 14:27:57 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:34:54 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:35:48 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:35:49 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:36:05 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:37:21 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:38:04 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:38:15 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:39:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:40:26 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:41:50 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:42:24 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:42:31 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:42:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:42:48 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:43:02 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:44:39 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:45:30 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:49:36 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:49:40 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 14:49:40 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 14:50:27 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 14:50:27 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 14:50:44 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 14:50:44 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 14:50:53 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 14:50:53 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 14:51:06 Asia/Manila] Session data: Array
+(
+)
+
+[23-Jun-2025 14:51:06 Asia/Manila] User not logged in, redirecting to login.php
+[23-Jun-2025 14:51:49 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:53:23 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:53:25 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:54:04 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:54:47 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:55:59 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:56:33 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:57:20 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:57:20 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 14:57:20 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => IMG_1927.HEIC
+            [full_path] => IMG_1927.HEIC
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\php5514.tmp
+            [error] => 0
+            [size] => 662234
+        )
+
+)
+
+[23-Jun-2025 14:57:20 Asia/Manila] Error: Invalid file type or size (max 5MB JPEG/PNG allowed)
+Trace: #0 {main}
+[23-Jun-2025 14:57:31 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:57:31 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 14:57:31 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => IMG_0551 (1).JPG
+            [full_path] => IMG_0551 (1).JPG
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php7CFF.tmp
+            [error] => 0
+            [size] => 5960095
+        )
+
+)
+
+[23-Jun-2025 14:57:31 Asia/Manila] Error: Invalid file type or size (max 5MB JPEG/PNG allowed)
+Trace: #0 {main}
+[23-Jun-2025 14:57:45 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:57:45 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 14:57:45 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => Screenshot 2024-02-20 211810.png
+            [full_path] => Screenshot 2024-02-20 211810.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpB40E.tmp
+            [error] => 0
+            [size] => 1003816
+        )
+
+)
+
+[23-Jun-2025 14:57:45 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 14:57:48 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:57:48 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 14:57:48 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => Screenshot 2024-02-20 211810.png
+            [full_path] => Screenshot 2024-02-20 211810.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpC006.tmp
+            [error] => 0
+            [size] => 1003816
+        )
+
+)
+
+[23-Jun-2025 14:57:48 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 14:58:13 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:58:35 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:58:35 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 14:58:35 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => Screenshot 2024-02-20 211104.png
+            [full_path] => Screenshot 2024-02-20 211104.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php77FC.tmp
+            [error] => 0
+            [size] => 294704
+        )
+
+)
+
+[23-Jun-2025 14:58:35 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 14:58:45 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 14:58:45 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 14:58:45 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => Screenshot 2024-02-20 211104.png
+            [full_path] => Screenshot 2024-02-20 211104.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpA130.tmp
+            [error] => 0
+            [size] => 294704
+        )
+
+)
+
+[23-Jun-2025 14:58:45 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 15:01:17 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:01:30 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:01:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:01:57 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:02:06 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:02:10 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:02:23 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:02:24 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:02:25 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:02:45 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:02:57 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:03:00 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:03:01 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:03:03 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:03:05 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:03:06 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:03:08 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:03:10 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:04:19 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:04:21 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:04:22 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:15 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:16 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:18 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:19 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:23 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:24 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:25 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:27 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:35 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:36 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:38 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:42 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:05:44 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:10:57 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:10:59 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:11:02 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:11:16 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:11:24 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:11:25 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:11:27 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:15:11 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:15:14 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:15:57 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:20:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:20:46 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 15:22:01 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 18:41:10 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 18:41:30 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 62
+            [username] => junee
+            [email] => me@gmail.com
+            [phonenumber] => 09122223333
+            [password] => $2y$10$xes7DOeeaBEt.1b21MG2H.U8yrdsNVnQz9orcXZpLiPgxVBFME4oC
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 18:41:30 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 300000.00
+    [lift_model] => Airbus+H160
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-26 08:00:00
+    [arr_date_time] => 2025-06-26 08:25:00
+    [departure] => MNL
+    [arrival] => Balesin Island
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 18:41:30 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => COR_JOHN-GABRIEL-SOLDEVILLA-COMSOC.png
+            [full_path] => COR_JOHN-GABRIEL-SOLDEVILLA-COMSOC.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php8D1C.tmp
+            [error] => 0
+            [size] => 186585
+        )
+
+)
+
+[23-Jun-2025 18:41:30 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 18:50:27 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 63
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$4Fva.Yc0YW1MpzSOhRVv/utBT18uAH/CP3J0fU./LXDXZtrKDLyIi
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 18:50:49 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 63
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$4Fva.Yc0YW1MpzSOhRVv/utBT18uAH/CP3J0fU./LXDXZtrKDLyIi
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 18:50:49 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 10:00:00
+    [departure] => MNL
+    [arrival] => Banwa
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 18:50:49 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => COR_JOHN-GABRIEL-SOLDEVILLA-COMSOC.png
+            [full_path] => COR_JOHN-GABRIEL-SOLDEVILLA-COMSOC.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php14B5.tmp
+            [error] => 0
+            [size] => 186585
+        )
+
+)
+
+[23-Jun-2025 18:50:49 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 19:11:44 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 63
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$4Fva.Yc0YW1MpzSOhRVv/utBT18uAH/CP3J0fU./LXDXZtrKDLyIi
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 19:11:44 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 10:00:00
+    [departure] => MNL
+    [arrival] => Banwa
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 19:11:44 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => COR_JOHN-GABRIEL-SOLDEVILLA-COMSOC.png
+            [full_path] => COR_JOHN-GABRIEL-SOLDEVILLA-COMSOC.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php3DEE.tmp
+            [error] => 0
+            [size] => 186585
+        )
+
+)
+
+[23-Jun-2025 19:11:45 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 19:11:48 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 63
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$4Fva.Yc0YW1MpzSOhRVv/utBT18uAH/CP3J0fU./LXDXZtrKDLyIi
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 19:12:07 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [User_Id] => 63
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$4Fva.Yc0YW1MpzSOhRVv/utBT18uAH/CP3J0fU./LXDXZtrKDLyIi
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 19:12:07 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-25 08:00:00
+    [arr_date_time] => 2025-06-25 10:00:00
+    [departure] => MNL
+    [arrival] => Banwa
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 19:12:07 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => ASLASH.png
+            [full_path] => ASLASH.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php9611.tmp
+            [error] => 0
+            [size] => 22904
+        )
+
+)
+
+[23-Jun-2025 19:12:07 Asia/Manila] Error: User authentication failed
+Trace: #0 {main}
+[23-Jun-2025 19:15:43 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 19:16:12 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 19:16:12 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:45:00
+    [departure] => MNL
+    [arrival] => Amorita Resort
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 19:16:12 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => ASLASH.png
+            [full_path] => ASLASH.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php5291.tmp
+            [error] => 0
+            [size] => 22904
+        )
+
+)
+
+[23-Jun-2025 19:16:12 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 19:16:12 Asia/Manila] Aircraft_Id: 2
+[23-Jun-2025 19:16:12 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 19:16:12 Asia/Manila] Arrival_Coordinates: Amorita Resort
+[23-Jun-2025 19:16:12 Asia/Manila] Arr_Date_Time: 2025-06-24 09:45:00
+[23-Jun-2025 19:16:12 Asia/Manila] Status: Confirmed
+[23-Jun-2025 19:16:12 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 19:16:12 Asia/Manila] Dep_Date_Time: 2025-06-24 08:00:00
+[23-Jun-2025 19:16:12 Asia/Manila] New schedule created with ID: 61
+[23-Jun-2025 19:20:45 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+    [booking_id] => 57
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => JOHN GABRIEL
+                    [lname] => SOLDEVILLA
+                    [age] => 22
+                    [street] => BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA
+                    [barangay] => Kay-Anlog
+                    [municipality] => Calamba
+                    [province] => Laguna
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 07:16 PM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Amorita Resort
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:45:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[23-Jun-2025 21:56:25 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 22:22:06 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 22:23:26 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[23-Jun-2025 22:23:26 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:00:00
+    [departure] => MNL
+    [arrival] => Batangas
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 22:23:26 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => image (6).png
+            [full_path] => image (6).png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpE4E0.tmp
+            [error] => 0
+            [size] => 1783257
+        )
+
+)
+
+[23-Jun-2025 22:23:27 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 22:23:27 Asia/Manila] Aircraft_Id: 1
+[23-Jun-2025 22:23:27 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 22:23:27 Asia/Manila] Arrival_Coordinates: Batangas
+[23-Jun-2025 22:23:27 Asia/Manila] Arr_Date_Time: 2025-06-24 09:00:00
+[23-Jun-2025 22:23:27 Asia/Manila] Status: Confirmed
+[23-Jun-2025 22:23:27 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 22:23:27 Asia/Manila] Dep_Date_Time: 2025-06-24 08:00:00
+[23-Jun-2025 22:23:27 Asia/Manila] New schedule created with ID: 62
+[23-Jun-2025 22:26:56 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+    [booking_id] => 58
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => JOHN GABRIEL
+                    [lname] => SOLDEVILLA
+                    [age] => 22
+                    [street] => BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA
+                    [barangay] => Kay-Anlog
+                    [municipality] => Calamba
+                    [province] => Laguna
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 10:23 PM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Batangas
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:00:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[23-Jun-2025 22:28:12 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+    [booking_id] => 58
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => JOHN GABRIEL
+                    [lname] => SOLDEVILLA
+                    [age] => 22
+                    [street] => BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA
+                    [barangay] => Kay-Anlog
+                    [municipality] => Calamba
+                    [province] => Laguna
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 10:23 PM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Batangas
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:00:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[23-Jun-2025 22:48:29 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+    [booking_id] => 58
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => JOHN GABRIEL
+                    [lname] => SOLDEVILLA
+                    [age] => 22
+                    [street] => BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA
+                    [barangay] => Kay-Anlog
+                    [municipality] => Calamba
+                    [province] => Laguna
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 10:23 PM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Batangas
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:00:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[23-Jun-2025 22:49:03 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+    [booking_id] => 58
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => JOHN GABRIEL
+                    [lname] => SOLDEVILLA
+                    [age] => 22
+                    [street] => BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA
+                    [barangay] => Kay-Anlog
+                    [municipality] => Calamba
+                    [province] => Laguna
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 10:23 PM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Batangas
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:00:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[23-Jun-2025 22:49:24 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+    [booking_id] => 58
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => JOHN GABRIEL
+                    [lname] => SOLDEVILLA
+                    [age] => 22
+                    [street] => BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA
+                    [barangay] => Kay-Anlog
+                    [municipality] => Calamba
+                    [province] => Laguna
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 10:23 PM
+    [lift_model] => Cessna Turbo Stationair HD (T206H)
+    [lift_capacity] => Up to 5 passengers
+    [departure] => MNL
+    [arrival] => Batangas
+    [dep_date_time] => 2025-06-24 08:00:00
+    [arr_date_time] => 2025-06-24 09:00:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 50000
+    [surcharge] => 500
+    [total_paid] => 50500
+)
+
+[23-Jun-2025 22:49:24 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 120000.00
+    [lift_model] => Cessna+Grand+Caravan+EX+(Deluxe+Config)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-26 08:00:00
+    [arr_date_time] => 2025-06-26 09:00:00
+    [departure] => MNL
+    [arrival] => Farm San Benito Lipa
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[23-Jun-2025 22:49:24 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => image (6).png
+            [full_path] => image (6).png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpA7B4.tmp
+            [error] => 0
+            [size] => 1783257
+        )
+
+)
+
+[23-Jun-2025 22:49:24 Asia/Manila] Schedule data before insertion:
+[23-Jun-2025 22:49:24 Asia/Manila] Aircraft_Id: 2
+[23-Jun-2025 22:49:24 Asia/Manila] Departure_Coordinates: MNL
+[23-Jun-2025 22:49:24 Asia/Manila] Arrival_Coordinates: Farm San Benito Lipa
+[23-Jun-2025 22:49:24 Asia/Manila] Arr_Date_Time: 2025-06-26 09:00:00
+[23-Jun-2025 22:49:24 Asia/Manila] Status: Confirmed
+[23-Jun-2025 22:49:24 Asia/Manila] Booked_Capacity: 1
+[23-Jun-2025 22:49:24 Asia/Manila] Dep_Date_Time: 2025-06-26 08:00:00
+[23-Jun-2025 22:49:24 Asia/Manila] New schedule created with ID: 63
+[23-Jun-2025 23:08:51 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+    [booking_id] => 59
+    [passengers] => Array
+        (
+            [0] => Array
+                (
+                    [fname] => JOHN GABRIEL
+                    [lname] => SOLDEVILLA
+                    [age] => 22
+                    [street] => BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA
+                    [barangay] => Kay-Anlog
+                    [municipality] => Calamba
+                    [province] => Laguna
+                    [hasInsurance] => no
+                    [insuranceDetails] => 
+                )
+
+        )
+
+    [booking_date] => June 23, 2025, 10:49 PM
+    [lift_model] => Cessna Grand Caravan EX (Deluxe Config)
+    [lift_capacity] => Up to 12 passengers
+    [departure] => MNL
+    [arrival] => Farm San Benito Lipa
+    [dep_date_time] => 2025-06-26 08:00:00
+    [arr_date_time] => 2025-06-26 09:00:00
+    [payment_mode] => Gcash
+    [account] => 123456789
+    [base_price] => 120000
+    [surcharge] => 500
+    [total_paid] => 120500
+)
+
+[24-Jun-2025 12:28:49 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[24-Jun-2025 12:29:03 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[24-Jun-2025 12:29:03 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2025-06-27 08:00:00
+    [arr_date_time] => 2025-06-27 09:00:00
+    [departure] => MNL
+    [arrival] => El Nido Resorts
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[24-Jun-2025 12:29:03 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => image (8).png
+            [full_path] => image (8).png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php12FF.tmp
+            [error] => 0
+            [size] => 1783196
+        )
+
+)
+
+[24-Jun-2025 12:29:03 Asia/Manila] Schedule data before insertion:
+[24-Jun-2025 12:29:03 Asia/Manila] Aircraft_Id: 1
+[24-Jun-2025 12:29:03 Asia/Manila] Departure_Coordinates: MNL
+[24-Jun-2025 12:29:03 Asia/Manila] Arrival_Coordinates: El Nido Resorts
+[24-Jun-2025 12:29:03 Asia/Manila] Arr_Date_Time: 2025-06-27 09:00:00
+[24-Jun-2025 12:29:03 Asia/Manila] Status: Confirmed
+[24-Jun-2025 12:29:03 Asia/Manila] Booked_Capacity: 1
+[24-Jun-2025 12:29:03 Asia/Manila] Dep_Date_Time: 2025-06-27 08:00:00
+[24-Jun-2025 12:29:03 Asia/Manila] New schedule created with ID: 64
+[24-Jun-2025 13:26:03 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[24-Jun-2025 13:26:18 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 67
+            [username] => yhnlhee
+            [email] => gabrielsoldevilla@yahoo.com
+            [phonenumber] => 09232912527
+            [password] => $2y$10$tBIJmJxqM4SKmxTn9GgcvOPJLqd5TgmCvuvmAFySfGm5AbHrVSh7m
+            [role] => user
+        )
+
+)
+
+[24-Jun-2025 13:26:18 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Gcash
+    [referenceNumber] => 123456789
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 1
+    [passengers] => [{"fname":"JOHN GABRIEL","lname":"SOLDEVILLA","age":"22","street":"BLK-5 LOT-136 SOUTHVILLE 6 KAY-ANLOG CALAMBA","barangay":"Kay-Anlog","municipality":"Calamba","province":"Laguna","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2028-08-09 08:00:00
+    [arr_date_time] => 2028-08-09 09:30:00
+    [departure] => MNL
+    [arrival] => Shangri-La Boracay
+    [surcharge] => 500.00
+    [payment_mode] => Gcash
+    [account] => 123456789
+)
+
+[24-Jun-2025 13:26:18 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => image (8).png
+            [full_path] => image (8).png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7DC4.tmp
+            [error] => 0
+            [size] => 1783196
+        )
+
+)
+
+[24-Jun-2025 13:26:18 Asia/Manila] Schedule data before insertion:
+[24-Jun-2025 13:26:18 Asia/Manila] Aircraft_Id: 1
+[24-Jun-2025 13:26:18 Asia/Manila] Departure_Coordinates: MNL
+[24-Jun-2025 13:26:18 Asia/Manila] Arrival_Coordinates: Shangri-La Boracay
+[24-Jun-2025 13:26:18 Asia/Manila] Arr_Date_Time: 2028-08-09 09:30:00
+[24-Jun-2025 13:26:18 Asia/Manila] Status: Confirmed
+[24-Jun-2025 13:26:18 Asia/Manila] Booked_Capacity: 1
+[24-Jun-2025 13:26:18 Asia/Manila] Dep_Date_Time: 2028-08-09 08:00:00
+[24-Jun-2025 13:26:18 Asia/Manila] New schedule created with ID: 65
+[06-Jan-2026 16:21:34 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 71
+            [username] => Chrislhin
+            [email] => mchrislhin@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$tM1AlXBPEOfeRRpfxkQOle52W8QoCiWCKLI8P06xCmbWwRQIjC6Ma
+            [role] => user
+        )
+
+)
+
+[06-Jan-2026 16:22:28 Asia/Manila] Session data: Array
+(
+    [userlogin] => Array
+        (
+            [id] => 71
+            [username] => Chrislhin
+            [email] => mchrislhin@gmail.com
+            [phonenumber] => 09664101238
+            [password] => $2y$10$tM1AlXBPEOfeRRpfxkQOle52W8QoCiWCKLI8P06xCmbWwRQIjC6Ma
+            [role] => user
+        )
+
+)
+
+[06-Jan-2026 16:22:28 Asia/Manila] POST data: Array
+(
+    [paymentMethod] => Bank Transfer
+    [referenceNumber] => 35627334
+    [aircraftRate] => 50000.00
+    [lift_model] => Cessna+Turbo+Stationair+HD+(T206H)
+    [passenger_count] => 2
+    [passengers] => [{"fname":"Chrislhin","lname":"Malabanan","age":"20","street":"#402 zone 6 Santor Tanauan City Batangas","barangay":"bangkok","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""},{"fname":"Chris","lname":"Malabanan","age":"19","street":"#402 zone 6 Santor Tanauan City Batangas","barangay":"santorini","municipality":"Tanauan city","province":"Batangas","hasInsurance":"no","insuranceDetails":""}]
+    [dep_date_time] => 2026-01-07 08:00:00
+    [arr_date_time] => 2026-01-07 09:10:00
+    [departure] => MNL
+    [arrival] => Amanpulo
+    [surcharge] => 1000.00
+    [payment_mode] => Bank Transfer
+    [account] => 35627334
+)
+
+[06-Jan-2026 16:22:28 Asia/Manila] FILES data: Array
+(
+    [proof] => Array
+        (
+            [name] => 612-JjNj3FL._AC_SL1500_.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php16F1.tmp
+            [error] => 0
+            [size] => 92428
+        )
+
+)
+
+[06-Jan-2026 16:22:28 Asia/Manila] Schedule data before insertion:
+[06-Jan-2026 16:22:28 Asia/Manila] Aircraft_Id: 1
+[06-Jan-2026 16:22:28 Asia/Manila] Departure_Coordinates: MNL
+[06-Jan-2026 16:22:28 Asia/Manila] Arrival_Coordinates: Amanpulo
+[06-Jan-2026 16:22:28 Asia/Manila] Arr_Date_Time: 2026-01-07 09:10:00
+[06-Jan-2026 16:22:28 Asia/Manila] Status: Confirmed
+[06-Jan-2026 16:22:28 Asia/Manila] Booked_Capacity: 2
+[06-Jan-2026 16:22:28 Asia/Manila] Dep_Date_Time: 2026-01-07 08:00:00
+[06-Jan-2026 16:22:28 Asia/Manila] New schedule created with ID: 93

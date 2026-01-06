@@ -1,0 +1,517 @@
+        /* Custom Font - Ensure 'OxyNEO.otf' is in a 'fonts' folder relative to this HTML */
+        /* If OXYNEO.otf is directly in the same folder as this file, change 'fonts/OXYNEO.otf' to 'OXYNEO.otf' */
+        @font-face {
+            font-family: 'OxyNEO';
+            src: url('fonts/OXYNEO.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Universal box-sizing for easier layout */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* NEW: Luxurious blue gradient background for this page, matches calendar image */
+            background: linear-gradient(135deg, #1a2a4b, #2a4a7a, #4a6a9a) !important; /* Added !important for safety */
+            color: #fff; /* White text for contrast on dark background */
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stack header and main content vertically */
+            align-items: center; /* Center content horizontally */
+            min-height: 100vh;
+            padding-top: 90px; /* Space for fixed header, adjust if header height changes on mobile */
+        }
+
+        /* Add a wrapper for the main content to push it down below the fixed header */
+        .main-content-wrapper {
+            padding-top: 0; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        /* Header/Navigation bar (EXACTLY from calendar page's desired design) */
+        .panel {
+            width: 100%;
+            margin: 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .bg-blur {
+            display: none;
+        }
+
+        .scroll-wrapper {
+            width: 100%;
+        }
+
+        .header-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Exactly from image */
+            backdrop-filter: blur(12px); /* Exactly from image */
+            -webkit-backdrop-filter: blur(12px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%; /* Exactly from image */
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Exactly from image */
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 50px !important; /* Force this size for exact match */
+            width: auto !important;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.3) !important; /* Force this border */
+        }
+
+        .header-title {
+            font-family: 'Playfair Display', serif !important; /* Elegant font for title */
+            font-size: 28px !important; /* Force this size */
+            font-weight: 700 !important;
+            color: #fff !important;
+            letter-spacing: 1.5px !important; /* Spacing for luxury feel */
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+            white-space: nowrap;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 35px !important; /* Increased gap for better spacing */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li a {
+            color: #fff !important;
+            text-decoration: none !important;
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            padding: 10px 15px !important;
+            border-radius: 25px !important;
+            transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease !important;
+            position: relative !important;
+        }
+
+        .navbar li a:hover {
+            background: rgba(255, 255, 255, 0.2) !important;
+            color: #e6e6e6 !important;
+            transform: translateY(-2px) !important;
+        }
+
+        .navbar li a::after {
+            content: '' !important;
+            position: absolute !important;
+            left: 50% !important;
+            bottom: 5px !important;
+            width: 0% !important;
+            height: 2px !important;
+            background-color: #f0c300 !important; /* Gold accent color */
+            transition: width 0.3s ease, left 0.3s ease !important;
+        }
+
+        .navbar li a:hover::after {
+            width: calc(100% - 20px) !important;
+            left: 10px !important;
+        }
+
+        /* Explicit rule for Boxicons to ensure size and font-family */
+        .navbar li a .bx {
+            font-size: 20px !important;
+            font-family: 'boxicons' !important;
+        }
+
+        /* Responsive Design for Header Only */
+        @media (max-width: 992px) {
+            .header-title {
+                font-size: 24px !important;
+            }
+            .navbar ul {
+                gap: 20px !important;
+            }
+            .navbar li a {
+                font-size: 14px !important;
+                gap: 6px !important;
+                padding: 8px 12px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-bar {
+                flex-direction: column;
+                padding: 15px 20px;
+                align-items: flex-start;
+            }
+            .header-left {
+                margin-bottom: 15px;
+            }
+            .navbar ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                width: 100%;
+            }
+            .logo {
+                height: 40px !important;
+            }
+            .header-title {
+                font-size: 20px !important;
+            }
+            .navbar li a {
+                font-size: 12px !important;
+                padding: 6px 10px !important;
+            }
+            body {
+                padding-top: 120px;
+            }
+            .main-content-wrapper {
+                padding-top: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 18px !important;
+            }
+            .navbar ul {
+                justify-content: center;
+                gap: 8px !important;
+            }
+            .navbar li a {
+                font-size: 10px !important;
+                padding: 5px 8px !important;
+            }
+            .navbar li a .bx {
+                font-size: 16px !important;
+            }
+        }
+
+        /* Existing styles for aircraft-selection.html (or .php) - MODIFIED for dark background compatibility */
+        .main-content {
+            padding: 40px;
+            max-width: 900px;
+            margin-top: 60px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white for "frosted glass" look on gradient */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth on dark background */
+            color: #eee; /* Light text for readability */
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle light border */
+            backdrop-filter: blur(8px); /* Apply blur to main content too for consistency */
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .main-content h1 {
+            color: #f0c300; /* Gold for main title */
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Add text shadow for pop */
+        }
+
+        .selection-container {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .selection-container label {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff; /* White for labels */
+            margin-bottom: 5px;
+        }
+
+        #aircraft-select {
+            padding: 12px 20px;
+            font-size: 1.1em;
+            border: 2px solid rgba(255, 255, 255, 0.3); /* Lighter border */
+            border-radius: 6px;
+            width: 100%;
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.15); /* Transparent background */
+            color: #fff; /* White text */
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            /* Adjusted SVG data URI for white arrow */
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%00-13.7-6.9%2017.6%2017.6%200%200%00-13.7%206.9L146.2%20224.2%2032.8%2069.4c-3.1-4.6-9.1-7.1-15.1-7.1-6.1%200-11.1%202.5-14.2%207.1-3.1%204.6-4.6%2010.1-4.6%2016.1s1.5%2011.5%204.6%2016.1L146.2%20259l113.4-156.4c3.1-4.6%204.6-10.1%204.6-16.1s-1.5-11.5-4.6-16.1z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 15px top 50%;
+            background-size: 12px auto;
+            box-sizing: border-box;
+        }
+        /* Specific styling for options within the select dropdown */
+        #aircraft-select option {
+            background-color: #2a4a7a; /* Darker background for options */
+            color: #fff;
+        }
+        #aircraft-select:focus {
+            outline: none;
+            border-color: #f0c300; /* Gold border on focus */
+            box-shadow: 0 0 0 3px rgba(240, 195, 0, 0.25); /* Gold glow */
+        }
+
+        #selected-aircraft-details {
+            text-align: left;
+            border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lighter border */
+            padding: 30px 20px;
+            margin-top: 30px;
+        }
+
+        #selected-aircraft-details h2 {
+            color: #f0c300; /* Gold for titles */
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+
+        #selected-aircraft-details p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #eee; /* Light gray for text */
+        }
+
+        #selected-aircraft-details p strong {
+            color: #fff; /* White for strong text */
+        }
+
+        .aircraft-image-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .aircraft-image-container img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Stronger shadow */
+        }
+
+        .form-separator {
+            border: 0;
+            height: 1px;
+            /* White gradient for separator, as explicitly requested */
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+            margin: 40px 0;
+        }
+
+        .passenger-details-section {
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .passenger-details-section h2 {
+            color: #f0c300; /* Gold for titles */
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #fff; /* White for labels */
+            font-size: 1em;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group textarea {
+            padding: 10px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border */
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.15); /* Transparent background */
+            color: #fff; /* White text */
+        }
+        .form-group input[type="text"]::placeholder,
+        .form-group input[type="number"]::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6); /* Lighter placeholder text */
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="number"]:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #f0c300;
+            box-shadow: 0 0 0 3px rgba(240, 195, 0, 0.25);
+        }
+
+        .insurance-options {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .insurance-options input[type="radio"] {
+            margin-right: 5px;
+            margin-left: 0;
+            /* Style radio buttons for dark theme */
+            appearance: none;
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+        .insurance-options input[type="radio"]:checked {
+            background-color: #f0c300; /* Gold when checked */
+            border-color: #f0c300;
+        }
+        .insurance-options input[type="radio"]:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(240, 195, 0, 0.25);
+        }
+
+        .insurance-options label {
+            font-weight: normal;
+            margin-bottom: 0;
+            display: inline-block;
+            color: #fff; /* White for radio labels */
+        }
+
+        .form-group input[type="radio"]:first-of-type {
+            margin-left: 0;
+        }
+
+        .passenger-entry {
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Lighter border */
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: rgba(255, 255, 255, 0.08); /* Transparent background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+        }
+
+        .passenger-entry h3 {
+            color: #f0c300; /* Gold for passenger entry titles */
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.2); /* Lighter dashed line */
+            padding-bottom: 10px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .confirm-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 30px auto 0;
+            padding: 15px 30px;
+            background-color: #f0c300; /* Gold button */
+            color: #333; /* Dark text for contrast */
+            border: none;
+            border-radius: 50px; /* More rounded */
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(240, 195, 0, 0.4); /* Gold shadow */
+        }
+
+        .confirm-button:hover {
+            background-color: #e0b300; /* Darker gold on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(240, 195, 0, 0.6);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-bar {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 15px;
+            }
+            .navbar ul li {
+                margin: 0;
+            }
+            body {
+                padding-top: 120px; 
+            }
+            .main-content-wrapper {
+                padding-top: 20px; 
+            }
+            .main-content { 
+                padding: 20px;
+                margin: 20px auto;
+                margin-top: 100px; 
+            }
+            .main-content h1 {
+                font-size: 2em;
+            }
+            #aircraft-select {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 28px; /* Maintain larger title on very small screens for readability */
+            }
+            .navbar ul {
+                justify-content: center;
+                gap: 8px;
+            }
+            .navbar li a {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+        }
+        /* Style for unavailable aircraft options */
+select#aircraft-select option:disabled {
+    color: #ff0000 !important;
+    font-style: italic;
+    background-color: #ffeeee;
+}
+
+/* Highlight currently selected option */
+select#aircraft-select option:checked {
+    font-weight: bold;
+    background-color: #e6f7ff;
+}

@@ -1,0 +1,660 @@
+        /* Custom Font - Ensure 'OxyNEO.otf' is in a 'fonts' folder relative to this HTML */
+        @font-face {
+            font-family: 'OxyNEO';
+            src: url('fonts/OXYNEO.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; /* Prioritize Poppins, fallback to OxyNEO for specific elements, then sans-serif */
+        }
+
+        html, body {
+            height: auto; /* Allow content to dictate height */
+            width: 100%;
+            scroll-behavior: smooth;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            background-color: #f8f8f8; /* Light background for cleaner look */
+            color: #333;
+        }
+
+        /* Panel & Wrapper Adjustments */
+        .panel {
+            min-height: 100vh;
+            width: 100%;
+            padding-top: 50px; /* Space for fixed header */
+            background-color: #f8f8f8; /* Light background for content */
+            position: relative;
+            z-index: 1; /* Ensure panel content is above potential blur if used differently */
+            display: flex; /* Make panel a flex container to center scroll-wrapper */
+            justify-content: center; /* Center children horizontally */
+        }
+
+        .bg-blur {
+            display: none; /* Removed as header has backdrop-filter now */
+        }
+
+        .scroll-wrapper {
+            flex-direction: column;
+            align-items: center; /* This centers content blocks horizontally */
+            position: relative; /* Changed from absolute to relative for normal flow within panel */
+            width: 150%; /* Take full width of parent (panel) */
+            max-width: 1600px; /* Optional: control overall max width of content */
+            z-index: 1;
+            padding-bottom: 0px; /* Padding at the bottom for content */
+        }
+
+        /* Header Bar - Elegant and Sticky */
+        .header-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Slightly darker, more opaque */
+            backdrop-filter: blur(12px); /* Stronger blur for frosted glass */
+            -webkit-backdrop-filter: blur(12px); /* For Safari support */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%; /* Responsive padding */
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 50px; /* Slightly smaller, more refined */
+            width: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+        }
+
+        .header-title {
+            font-family: 'Playfair Display', serif; /* Elegant font for title */
+            font-size: 28px; /* Slightly smaller, more sophisticated */
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1.5px; /* Spacing for luxury feel */
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 35px; /* Increased gap for better spacing */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400; /* Lighter font weight */
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Space between icon and text */
+            padding: 10px 15px;
+            border-radius: 25px; /* More rounded buttons */
+            transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            position: relative; /* For underline effect */
+        }
+
+        .navbar li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #e6e6e6; /* Slight color change on hover */
+            transform: translateY(-2px); /* Subtle lift effect */
+        }
+
+        .navbar li a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 5px;
+            width: 0%;
+            height: 2px;
+            background-color: #f0c300; /* Gold accent color */
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .navbar li a:hover::after {
+            width: calc(100% - 20px); /* Adjust width to fit padding */
+            left: 10px; /* Adjust position based on padding */
+        }
+        .navbar li a .bx {
+            font-size: 20px; /* Adjust icon size */
+        }
+
+        /* Hero Section (Video Background) */
+        .hero-section {
+            width: 100%; /* Make it full width */
+            height: 100vh; /* Reduced height as per request */
+            border-radius: 0; /* No rounded corners if it touches the edges */
+            overflow: hidden;
+            position: relative;
+            margin-top: 30px; /* Space from header */
+            margin-bottom: 60px; /* Space before next section */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for hero */
+            display: flex; /* To center content */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            min-width: 150%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            object-fit: cover; /* Ensure video covers the entire container */
+            filter: brightness(0.7); /* Slightly dim the video for text contrast */
+        }
+
+        .hero-content {
+            position: relative; /* Ensure content is above the video */
+            z-index: 2;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Stronger text shadow */
+            padding: 20px; /* Add padding to content for smaller screens */
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 72px; /* Larger for impact */
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 24px; /* Subtitle size */
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            padding: 18px 45px;
+            font-size: 20px;
+            font-weight: 600;
+            background: #f0c300; /* Gold accent color */
+            color: #333; /* Dark text for contrast */
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(240, 195, 0, 0.4);
+        }
+
+        .hero-btn:hover {
+            background: #e0b300; /* Slightly darker gold */
+            transform: translateY(-3px); /* Lift effect */
+            box-shadow: 0 8px 20px rgba(240, 195, 0, 0.6);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin-bottom: 60px; /* More space */
+            margin-top: 80px; /* Space from previous section */
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: #f0c300; /* Gold underline */
+            border-radius: 5px;
+        }
+
+        /* Destination and Aircraft Grid */
+        /* Destination Grid (Flexible layout) */
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-fitting, flexible columns */
+            gap: 40px; /* Increased gap */
+            width: 90%; /* Adjust width to fit within centered image-scroll-container */
+            max-width: 1200px; /* Max width for large screens */
+            margin-bottom: 60px; /* Space after grid */
+            margin-left: auto; /* Center the grid within its flex parent */
+            margin-right: auto; /* Center the grid within its flex parent */
+        }
+
+        /* Aircraft Grid (Now explicitly 2 columns on large screens) */
+        .aircraft-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns for aircraft */
+            gap: 40px; /* Consistent gap */
+            width: 90%; /* Match destination grid width */
+            max-width: 1200px; /* Match destination grid max-width */
+            margin-bottom: 80px; /* More space before book now button */
+            margin-left: auto; /* Center the grid within its flex parent */
+            margin-right: auto; /* Center the grid within its flex parent */
+        }
+
+        .destination-card, .aircraft-card {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none; /* Remove underline from card link */
+            color: inherit; /* Inherit text color */
+        }
+
+        .destination-card:hover, .aircraft-card:hover {
+            transform: translateY(-10px); /* Lift effect on hover */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+        }
+
+        .destination-card img, .aircraft-card img {
+            width: 100%;
+            height: 250px; /* Fixed height for consistent cards */
+            object-fit: cover;
+            border-bottom: 1px solid #eee; /* Subtle separator */
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover img, .aircraft-card:hover img {
+            transform: scale(1.05); /* Slight zoom on image */
+        }
+
+        .card-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .card-content p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .card-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 15px;
+            font-weight: 500;
+            background: #333; /* Dark button */
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+        }
+
+        .card-btn:hover {
+            background: #f0c300; /* Gold on hover */
+            color: #333;
+            transform: translateY(-2px);
+        }
+
+        /* Lightbox for Aircraft */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack image and controls */
+            gap: 20px;
+            z-index: 9999; /* Higher z-index */
+        }
+
+        .lightbox img {
+            max-width: 80%; /* Slightly smaller max width */
+            max-height: 80%; /* Slightly smaller max height */
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Soft white glow */
+        }
+
+        .lightbox-controls {
+            display: flex;
+            align-items: center;
+            gap: 30px; /* Space between arrows and close */
+        }
+
+        .lightbox-arrow {
+            background: rgba(255, 255, 255, 0.15); /* Lighter, more subtle arrows */
+            color: white;
+            border: none;
+            font-size: 40px;
+            padding: 15px 25px; /* Larger clickable area */
+            cursor: pointer;
+            border-radius: 50%; /* Circular arrows */
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .lightbox-arrow:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-size: 40px; /* Larger close icon */
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .lightbox-close:hover {
+            color: #f0c300; /* Gold on hover */
+            transform: rotate(90deg); /* Spin effect */
+        }
+
+        /* Book Now Button */
+        .book-now-btn {
+            margin: 50px auto 80px auto; /* Centered with auto margins */
+            display: block; /* Important for auto margins to work */
+            padding: 20px 60px; /* Larger button */
+            font-size: 22px;
+            font-weight: bold;
+            background: #f0c300; /* Gold accent */
+            color: #333;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(240, 195, 0, 0.4);
+        }
+
+        .book-now-btn:hover {
+            background: #e0b300;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(240, 195, 0, 0.6);
+        }
+
+        /* About Section */
+        .about-section {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); /* Subtle gradient for depth */
+            backdrop-filter: blur(15px); /* Stronger blur */
+            -webkit-backdrop-filter: blur(15px);
+            color: #333; /* Dark text for readability on light background */
+            padding: 80px 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 80px auto; /* Centered with auto margins */
+            width: 90%;
+            max-width: 1000px;
+            border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
+        }
+
+        .about-container {
+            line-height: 1.8;
+            font-size: 17px;
+            font-weight: 300;
+            color: #444;
+        }
+
+        .about-container h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #333;
+            text-shadow: none; /* Remove text shadow */
+        }
+
+        /* Contact Section */
+        .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px; /* More space */
+            padding: 100px 20px;
+            color: #333; /* Dark text */
+            text-align: center;
+            background-color: #f0f0f0; /* Slightly different background for distinction */
+        }
+
+        .contact-logo {
+            width: 120px; /* Larger logo */
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+
+        .contact-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 18px; /* Slightly larger */
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #777;
+            padding: 20px;
+            background-color: #eee;
+            margin-bottom: 0; /* Stick to the bottom */
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .header-title {
+                font-size: 24px;
+            }
+            .navbar ul {
+                gap: 20px;
+            }
+            .hero-content h1 {
+                font-size: 56px;
+            }
+            .hero-content p {
+                font-size: 20px;
+            }
+            .hero-btn {
+                padding: 15px 35px;
+                font-size: 18px;
+            }
+            .section-title {
+                font-size: 40px;
+            }
+            .destination-grid, .aircraft-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets for both */
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-bar {
+                flex-direction: column;
+                padding: 15px 20px;
+                align-items: flex-start;
+            }
+            .header-left {
+                margin-bottom: 15px;
+            }
+            .navbar ul {
+                flex-wrap: wrap; /* Allow navigation items to wrap */
+                justify-content: center;
+                gap: 15px;
+                width: 100%;
+            }
+            .navbar li a {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+            .navbar li a .bx {
+                font-size: 16px;
+            }
+            .hero-section {
+                height: 50vh; /* Keep 50vh for tablets as well */
+            }
+            .hero-content h1 {
+                font-size: 48px;
+            }
+            .hero-content p {
+                font-size: 18px;
+            }
+            .hero-btn {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+            .destination-card img, .aircraft-card img {
+                height: 200px;
+            }
+            .card-content h3 {
+                font-size: 24px;
+            }
+            .book-now-btn {
+                padding: 15px 40px;
+                font-size: 18px;
+            }
+            .about-section {
+                padding: 60px 30px;
+                margin: 60px auto;
+            }
+            .about-container h2 {
+                font-size: 32px;
+            }
+            .contact-section {
+                flex-direction: column;
+                gap: 30px;
+                padding: 80px 20px;
+            }
+            .contact-logo {
+                width: 100px;
+            }
+            .contact-info h2 {
+                font-size: 30px;
+            }
+            .contact-info p {
+                font-size: 16px;
+            }
+            footer {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 20px;
+            }
+            .navbar ul {
+                justify-content: center;
+                gap: 10px;
+            }
+            .navbar li a {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+            .navbar li a .bx {
+                font-size: 16px;
+            }
+            .hero-content h1 {
+                font-size: 38px;
+            }
+            .hero-content p {
+                font-size: 16px;
+            }
+            .hero-btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+            .destination-grid, .aircraft-grid {
+                grid-template-columns: 1fr; /* Single column on very small screens */
+                gap: 25px;
+            }
+            .destination-card img, .aircraft-card img {
+                height: 180px;
+            }
+            .card-content h3 {
+                font-size: 22px;
+            }
+            .card-content p {
+                font-size: 14px;
+            }
+            .book-now-btn {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+            .section-title {
+                font-size: 32px;
+            }
+            .about-section {
+                padding: 40px 20px;
+                margin: 40px auto;
+            }
+            .about-container h2 {
+                font-size: 28px;
+            }
+            .about-container p {
+                font-size: 14px;
+            }
+            .contact-section {
+                padding: 60px 15px;
+                gap: 20px;
+            }
+            .contact-info h2 {
+                font-size: 26px;
+            }
+            .contact-info p {
+                font-size: 14px;
+            }
+            .lightbox-arrow {
+                font-size: 30px;
+                padding: 10px 15px;
+            }
+            .lightbox-close {
+                font-size: 30px;
+                top: 20px;
+                right: 20px;
+            }
+        }
